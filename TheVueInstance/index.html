@@ -14,6 +14,15 @@
         <a v-bind:href="website"> VueJs</a>
         <input type="text" v-bind-value="job"> VueJs</input>
         <p v-html="websiteTag"></p>
+        <p v-if="seen">Now you see me</p>
+    </div>
+
+    <div id="vue-app-events">
+        <h1>{{greet('night')}}</h1>
+        <a v-bind:href="website"> VueJs</a>
+        <input type="text" v-bind-value="job"> VueJs</input>
+        <p v-html="websiteTag"></p>
+        <p v-if="seen">Now you see me</p>
     </div>
 
     <script src="app.js"></script>
