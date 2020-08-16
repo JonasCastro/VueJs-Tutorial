@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS Tutorials</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="vue-app">
+        <h1>Dynamic CSS Classes</h1>
+        <button @click="nearby =!nearby"> Add to A</button>
+        <button @click="available = !available"> Add to B</button>
+        <div v-bind:class="compClasses">
+            <span>Ryu</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
